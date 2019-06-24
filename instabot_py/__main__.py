@@ -252,7 +252,7 @@ def setupinteractive(config, config_location="instabot.config.ini"):
             section = "DEFAULT"
 
         while requiredset is None:
-            if reqset is "req":
+            if reqset == "req":
                 confvar = ask_question(
                     f"Enter value for '{setting}':", tip="This field is required"
                 )
